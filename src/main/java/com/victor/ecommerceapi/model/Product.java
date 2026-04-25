@@ -13,7 +13,7 @@ public class Product {
     }
 
     //Construtor com parametros
-    public Product(long id, String name, Double prince, Integer stock) {
+    public Product(Long id, String name, Double price, Integer stock) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -21,14 +21,14 @@ public class Product {
     }
 
     //Getters e Setters
-    public long getId() {return id;}
-    public void setId(long id) {this.id = id;}
+    public Long getId() {return id;}
+    public void setId(Long id) {this.id = id;}
 
     public String getName() {return name;}
     public void setName(String name) {this.name = name;}
 
     public Double getPrice() {return price;}
-    public void setPrince(Double prince) {this.price = prince;}
+    public void setPrice(Double price) {this.price = price;}
 
     public Integer getStock() {return stock;}
     public void setStock(Integer stock) {this.stock = stock;}

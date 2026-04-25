@@ -5,7 +5,7 @@ public class OrderItem {
     //Atributos
     private Long id;
     private Product product;
-    private Integer quantivy;
+    private Integer quantity;
     private Double price;
 
     //Construtor Vazio
@@ -13,9 +13,9 @@ public class OrderItem {
     }
 
     //Construtor com parametros
-    public OrderItem(Product product, Integer quantivy) {
+    public OrderItem(Product product, Integer quantity) {
         this.product = product;
-        this.quantivy = quantivy;
+        this.quantity = quantity;
     }
 
     //Getters e Setters
@@ -25,14 +25,14 @@ public class OrderItem {
     public Product getProduct() {return product;}
     public void setProduct(Product product) {this.product = product;}
 
-    public Integer getQuantivy() {return quantivy;}
-    public void setQuantivy(Integer quantivy) {this.quantivy = quantivy;}
+    public Integer getQuantity() {return quantity;}
+    public void setQuantity(Integer quantity) {this.quantity = quantity;}
 
     public Double getPrice() {return price;}
     public void setPrice(Double price) {this.price = price;}
 
     //Metodo da classe
     public Double getTotal(){
-        return product.getPrice() * quantivy;
+        return product.getPrice() * quantity;
     }
 }

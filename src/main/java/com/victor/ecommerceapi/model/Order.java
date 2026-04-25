@@ -21,11 +21,11 @@ public class Order {
     }
 
     //Construtor com parametros
-    public Order(Long id, List<OrderItem> items, OrderStatus status, LocalDateTime creatAt){
+    public Order(Long id, List<OrderItem> items, OrderStatus status, LocalDateTime createdAt){
         this.id = id;
         this.items = items;
         this.status = status;
-        this.createdAt = creatAt;
+        this.createdAt = createdAt;
     }
 
 
@@ -43,8 +43,8 @@ public class Order {
     public OrderStatus getStatus() {return status;}
     public void setStatus(OrderStatus status) {this.status = status;}
 
-    public LocalDateTime getCreatAt() {return createdAt;}
-    public void setCreatAt(LocalDateTime creatAt) {this.createdAt = creatAt;}
+    public LocalDateTime getCreatedAt() {return createdAt;}
+    public void setCreatedAt(LocalDateTime createdAt) {this.createdAt = createdAt;}
 
 
     //Metodo da classe
